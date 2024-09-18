@@ -69,6 +69,8 @@ nav{
 }
 .nav-en ul li:hover{
     color: #006e39;
+    background-color: orangered;
+    transition: 1s ease;
 }
 .tour a{
     color: #3b7c0f;
@@ -86,7 +88,7 @@ nav{
 .btn-en{
     color: #fff;
     padding: 0 8px;
-    background-color:  #3b7c0f;
+    background-color:  #b6f88a;
     border-radius: 6px;
 }
 .btn-en:hover{
@@ -95,16 +97,16 @@ nav{
 #hero{
     background-image: url("assets/realistic-scene-with-young-children-with-autism-playing\ 1.png");
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 .tri{
     background-image: url("assets/Rectangle\ 7.png");
-    height: 88vh;
-    background-size: contain;
+    height: 96vh;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 60%;
+    width: 60vw;
     padding: 30px 0px 0px 0px;
     
 }
@@ -112,20 +114,20 @@ nav{
     font-family: "Nunito";
     font-weight: 600;
     font-size: 64px;
-    line-height: 77.3px;
+    line-height: 65.3px;
     color: #ffffff;
     margin-bottom: -10px;
 }
 .tri p{
     font-family: "Nunito";
     font-weight: 400;
-    font-size: 20px;
-    line-height: 27.28px;
+    font-size: 20px;;
     color: #ffffff;
 }
 .marg{
-    padding: 30px 0px 0px 40px;
+    padding: 0px 0px 0px 40px;
     width: 30vw;
+    height: 30vh;
 }
 .btn-an{
     color: #fff;
@@ -264,6 +266,14 @@ nav{
     z-index: -99999999999;
     top: -200px;
     text-align: center;
+}
+.illust p{
+    font-family: "Nunito";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27.28px;
+    color: #505050;
+    position: relative;
 }
 .illust{
     display: flex;
@@ -533,17 +543,21 @@ footer{
     }
     nav{
         display: flex;
+        width: 90vw;
         /* flex-direction: column; */
         align-items: flex-start;
+        justify-content: space-between;
     }
+
     nav ul{
         display: flex;
         flex-direction: column;
-    }
-    nav ul li{
-        font-size: 8px;
-        margin: -15px;
 
+    }
+    .nav-en ul li{
+        font-size: 8px;
+        margin: -16px;
+        padding: -10px;
     }
     header{
         display: flex;
@@ -551,7 +565,7 @@ footer{
         align-items: flex-start;
         justify-content: space-between;
         margin-left: -40px;
-        height: 15vh;
+        height: 18vh;
     }
     .closeNav {
         display: none;
@@ -564,11 +578,289 @@ footer{
         font-size: 2rem;
         cursor: pointer;
     }
-    h1{
-        font-size: 22px;
+    .marg h1{
+        font-size: 25px;
+        line-height: normal;
+    }
+    .marg p{
+        font-size: small;
+    }
+    .btn-an{
+        font-size: 8px;
     }
     h2{
-        font-size: 18px;
+        font-size: 1px;
+    }
+    #sect, #sect-1{
+        display: flex;
+        flex-direction: column;
     }
 
+    #hero{
+        background-image: url("assets/realistic-scene-with-young-children-with-autism-playing\ 1.png");
+        height: 55vh;
+        width: 96.5vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .tri{
+        background-image: url("assets/Rectangle\ 7.png");
+        height: 50vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 90vw;
+        padding: 30px 0px 0px 0px;
+        
+    }
+    .faith{
+        padding: 80px;
+    }
+    .faith h2{
+        font-family: "Nunito";
+        font-weight: 600;
+        font-size: 28px;
+        line-height: normal;
+    }
+    .faith p{
+        font-family: "Nunito";
+        font-weight: 400;
+        font-size: 10px;
+        line-height: normal;
+        color: #505050;
+    }
+    .illus img{
+        width: 400px;
+    }
+    .ill-an{
+        height: 192px;
+        position: relative;
+        right: 20px;
+        bottom: 4px;
+    }
+    .prev{
+        position: absolute;
+        left: 0px;
+        width: 50px;
+    }
+    #next, .next{
+        position: relative;
+        right: 30px;
+        width: 50px;
+    }
+    #faith{
+        height: 380px;
+        margin: -20px;
+        margin-left: 5px;
+        padding: 0;
+        padding-left: 20;
+    }
+    .ill-an{
+        height: 372px;
+        width: 220px;
+        position: relative;
+        right: -20px;
+    }
+    .faith-an h2{
+        font-family: "Nunito";
+        font-weight: 600;
+        font-size: 28px;
+        line-height: normal;
+        color: #ffffff;
+    }
+    .faith-an p{
+        font-family: "Nunito";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: normal;
+        color: #505050;
+        position: relative;
+    }
+    .point{
+        width: 50px;
+    }
+    .faith-an{   
+        background-size: cover;     
+        padding: px;
+        padding-right: 0px;
+        gap: -5px;
+        max-width: 800px;
+    }
+    #slide{
+        background-image: url("assets/Vector.png");
+        background-repeat: no-repeat;
+        padding: 150px 0px 0px 10px;
+        margin-bottom: -80px;
+    }
+    .choice h2{
+        font-size: 28px;
+        line-height: normal;
+        margin-bottom: -10px;
+    }
+    .choice h2 span{
+        color: #006e39;
+    }
+    .choice p{
+        font-family: "Nunito";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: normal;
+        color: #505050;
+    }
+    #choice .choice{
+        padding: 0 3vw;
+    }
+    .illust img{
+        width: 100;
+    }
+    .illust{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .illust p{
+        font-family: "Nunito";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 27.28px;
+        color: #505050;
+        position: relative;
+    }
+    #choice{
+        margin-bottom: -150px;
+    }
+    .success h2{
+        font-size: 28px;
+    }
+    .success .ding{
+        font-family: "Nunito";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 27.28px;
+        color: #505050;
+    }
+    .enroll-en{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: -10px;
+    }
+    .dot-container {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 0px;
+        border-radius: 50%;
+        display: inline-block;
+        transition: 1s ease;
+    }
+
+    #contact h1{
+        font-family: "Nunito";
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 5.57px;
+    }
+    #contact p{
+        font-family: "Nunito";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: normal;
+        color: #505050;
+    }
+    .cont h6{
+        font-size: 20px;
+        font-family: "Nunito";
+        font-weight: 600;
+        margin-bottom: -20px;
+        color: #006e39;
+    }
+    .cont img{
+        width: 50px;
+        margin-bottom: -50px;
+    }
+    .cont{
+        gap: 30px;
+    }
+    #follow h1{
+        font-size: 28px;
+        line-height: 5.57px;
+    }
+    #follow p{
+
+        font-size: 12px;
+        line-height: normal;
+    }
+    .follow-icon img{
+        width: 50px;
+    }
+    
+    footer{
+        background-image: url(assets/Vector12.png);
+        background-repeat: no-repeat;
+        height: 50vh;
+        padding-top: 50px;
+        padding-right: 30px;
+    }
+    .bang{
+        display: flex;
+        align-items: top;
+        justify-content: space-between;
+    }
+    .bang img{
+        margin: 0 35px;
+    }
+    .curtesy p{
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: normal;
+        color: #98a2b3;
+    }
+    .bang .nav-en{
+        justify-content: space-between;
+        margin-right: 50px;
+    }
+    .curtesy ul li{
+        font-family: "Inter";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+        list-style-type: none;
+        color: #98a2b3;
+    }
+    .curtesy ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .sub p{
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #101828;
+    }
+    .sub input{
+        width: 200px;
+        height: 30px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        border:1px solid #d0d5dd;
+        gap: 8px;
+        padding: 10px 14px;
+    }
+    .curtesy{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 50px;
+        margin-top: 100px;
+        width: 80vw;
+    }
+    
 }
