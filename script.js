@@ -72,3 +72,14 @@ headerNav.classList.add("closeNav");
 }
 
 console.log(navLinks);
+
+
+function submitForm(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Hide the form section
+    document.getElementById('form-container').style.display = 'none';
+
+    // Show the success section
+    document.getElementById('model').style.display = 'block';
+}

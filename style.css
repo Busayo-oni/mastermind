@@ -27,7 +27,7 @@ body{
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
-    font-family: aria;
+    font-family: "Nunito";
 }
 a{
     text-decoration: none;
@@ -68,9 +68,10 @@ nav{
     line-height: 24px;
 }
 .nav-en ul li:hover{
-    color: #006e39;
-    background-color: orangered;
+    color: #006E39;
+    border-bottom: 5px solid #006E39;
     transition: 1s ease;
+    border-radius: 8px;
 }
 .tour a{
     color: #3b7c0f;
@@ -97,7 +98,7 @@ nav{
 #hero{
     background-image: url("assets/realistic-scene-with-young-children-with-autism-playing\ 1.png");
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -152,10 +153,12 @@ nav{
 #sect-1{
     background-image: url("assets/Rectangle\ 5.png");
     object-fit: cover;
+    /* width: 100%; */
 }
 #sect-1 .illus{
     background-image: url("assets/Group\ 2.png");
     object-fit: cover;
+    /* width: 100%; */
 }
 .faith h2{
     font-family: "Nunito";
@@ -188,12 +191,14 @@ nav{
 }
 #slide{
     background-image: url("assets/Vector.png");
+    /* width: 100%; */
     background-repeat: no-repeat;
     padding: 250px 0px 0px 140px;
 }
 .faith-en{
     background-image: url(assets/Rectangle\ 11.png);
     background-repeat: no-repeat;
+    /* width: 100%; */
     background-size: contain;
     padding: 50px;
     gap: -5px;
@@ -261,6 +266,7 @@ nav{
 #choice{
     background-image: url("assets/Rectangle\ 7g.png");
     padding-top: 400px;
+    width: 100%;
     position: relative;
     background-repeat: no-repeat;
     z-index: -99999999999;
@@ -306,6 +312,7 @@ nav{
 .group1{
     background-image: url("assets/Group 8.png");
     background-repeat: no-repeat;
+    width: 100%;
     background-position: 80px;
     background-position-y: 180px;
     background-position-x: center;
@@ -313,6 +320,7 @@ nav{
 .success{
     background-image: url("assets/Group 9.png");
     background-repeat: no-repeat;
+    width: 100%;
     background-position: top;
     background-position-x: 26px;
     position: relative;
@@ -325,6 +333,7 @@ nav{
     text-align: center;
     position: relative;
     top: -300;
+    width: 100%;
     padding-top: 360px;
     margin-bottom: -500px;
 }
@@ -477,7 +486,7 @@ nav{
 footer{
     background-image: url(assets/Vector12.png);
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 50%;
     padding-top: 50px;
     padding-right: 30px;
 }
@@ -807,8 +816,10 @@ footer{
     }
     .bang{
         display: flex;
-        align-items: top;
+        flex-direction: column;
+        align-items: center;
         justify-content: space-between;
+        text-align: center;
     }
     .bang img{
         margin: 0 35px;
@@ -822,7 +833,7 @@ footer{
     }
     .bang .nav-en{
         justify-content: space-between;
-        margin-right: 50px;
+        gap: 30px;
     }
     .curtesy ul li{
         font-family: "Inter";

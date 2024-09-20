@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masterminds DayCare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="application.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="assets/Mastermind Daycare 1.png" alt="main logo"></div>
+            <div class="nav-en">
+                <ul>
+                    <li><a href="index.html">RESOURCES</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li class="tour"><a href="application.html">BOOK A TOUR</a></li>
+                    <li class="btn-en"><a href="#">CONTACT US</a></li>
+
+                </ul>
+            </div>
+            <div class="menu"><i class="bx bx-menu"></i></div>
+        </nav>
+    </header>
+    <section class="top-head">
+        <div class="clear">
+            <h1>BOOK A TOUR</h1>
+            <p>‘’With a Big Heart, We Shape Little Minds’’</p>
+            <button class="btn-an">Apply Today</button>
+        </div>
+        <div class="right-img"></div>
+    </section>
+    <main>
+        <section class="form-container" id="form-container">
+            <h1>FILL IN YOUR INFORMATION</h1>
+            <form id="myForm" onsubmit="submitForm(event)">
+                <p class="label-en">Schedule A Tour</p>
+                <div class="input-en">
+                    <p>Location</p>
+                    <label for="Location"><input type="radio" name="radio" id="radio" placeholder="Ikoyi"><label for="Ikoyi">Ikoyi</label>
+                    <label for="location"><input type="radio" name="radio" id="radio" placeholder="Victoria Island">Victoria Island</label>   
+                </div>
+                <div class="input-en">
+                    <p>If Yes, Enter Preferred Date </p>
+                    <input type="date" name="date" id="date" class="imp">
+                </div>
+                <div class="input-en">
+                    <p>How many people will be attending? </p>
+                    <input type="number" name="number" id="number" placeholder="Enter Number of Expected People" class="imp">
+                </div>
+
+                <p class="label-en">Child Details</p>
+                <div class="input-en">
+                        <p>Child’s Full Name <span>*</span></p>
+                        <input type="text" name="full-name" id="full-name" placeholder="Enter Child’s full name" class="imp" required>
+                    </div>
+                <div class="input-en">
+                    <p>Child’s Date of Birth  </p>
+                    <input type="date" name="date" id="date" placeholder="Enter Child’s date of birth" class="imp">
+                </div>
+                <div class="input-en">
+                    <p>Child’s age <span>*</span> </p>
+                    <input type="text" name="text" id="text" placeholder="Enter Child’s age" class="imp" required>
+                </div>
+
+                <p class="label-en">Parent/Guardian Details</p>
+                <div class="input-en">
+                        <p>Parent / Guardian Full Name <span>*</span></p>
+                        <input type="text" name="full-name" id="full-name" placeholder="Enter your full name" class="imp" required>
+                    </div>
+                <div class="input-en">
+                    <p>Email Address <span>*</span>  </p>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address" class="imp" required>
+                </div>
+                <div class="input-en">
+                    <p>House Address </p>
+                    <input type="text" name="text" id="text" placeholder="Enter your house address" class="imp">
+                </div>
+                <div class="input-en">
+                    <p>Phone Number <span>*</span> </p>
+                    <input type="tel" name="tel" id="tel" placeholder="Enter your phone number" class="imp" required>
+                </div>
+
+                <p class="label-en">More Context</p>
+                <div class="input-en">
+                        <p>How Did You Hear About Us?</p>
+                        <select name="choose" id="choice-en" class="imp">
+                            <option value="instagram" class="option">Instagram</option>
+                            <option value="LinkedIn" class="option">LinkedIn</option>
+                            <option value="Facebook" class="option">Facebook</option>
+                            <option value="YouTube" class="option">YouTube</option>
+                        </select>
+                    </div>
+                <div class="input-en">
+                    <p class="add">Additional Comments</p>
+                    <textarea name="text" id="idea" cols="30" rows="10" class="imp"></textarea>
+                </div>
+                <div class="input-an">
+                    <label for="captcha" class="captcha"><input type="radio" name="captcha" id="captch" required>I'm not a robot <img src="assets/logos_recaptcha.png" alt="recaptcha logo"></label>
+                    <button type="submit" class="btn-an">Submit</button>
+                </div>
+
+            </form>
+        </section>
+
+        <section class="model" id="model">
+            <img src="assets/Featured-icon.png" alt="success">
+            <h1>Tour Successfully Booked</h1>
+            <p>Your tour has been successfully scheduled to our open house.</p>
+            <button><a href="index.html">Return to home</a></button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="bang">
+        <div class="nav-en">
+            <img src="assets/Mastermind Daycare 1.png" alt="logo">
+            <ul>
+                <li>Overview</li>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Careers</li>
+                <li>Help</li>
+                <li>Privacy</li>
+            </ul>
+        </div>
+        <div class="sub">
+            <p>Stay up to date</p>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <button class="btn-an">Subscribe</button>
+        </div>
+    </div>
+    <div class="curtesy">
+        <p>@2024 Mastermind Daycare. All rights reserved.</p>
+        <ul>
+            <li>Terms</li>
+            <li>Policy</li>
+            <li>Cookies</li>
+        </ul>
+        
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
