@@ -195,6 +195,9 @@ nav{
     background-repeat: no-repeat;
     padding: 250px 0px 0px 140px;
 }
+#myslides{
+    display: none;
+}
 .faith-en{
     background-image: url(assets/Rectangle\ 11.png);
     background-repeat: no-repeat;
